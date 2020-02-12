@@ -1,0 +1,45 @@
+<!-- contents feed/!-->
+	
+<!-- each for course  /!-->
+<% @courses.each do |course| %>
+<div class="container course__content border bg-white rounded-t-lg rounded-b-lg overflow-hidden border-t border-b border-l border-r border-gray-400  mb-2">
+
+	<!-- meta data course/!-->
+	<small class="font-bold">
+	 Cours: <%= link_to course.matiere.matiere, course.matiere %> - <%= course.level.title %>  
+    </small>
+    <!-- course title/!-->
+	<p class="no-underline"> 
+		<%= link_to course, class:"mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline hover:font-semibold" do %>
+		  <%= course.title %> 
+		<% end %>
+	</p>
+	<!-- avatar and meta data users/!-->
+	<div class="flex items-center">
+	<!-- avatar user/!-->
+	<img src="https://bulma.io/images/placeholders/32x32.png" class=" w-10  rounded-full mr-2">
+	
+	<!-- current_user.username/!-->
+	<span class="leading-none text-gray-900 font-sans text-base no-underline "> 
+	<%= link_to course.user.username, user_path(course.user) %>             
+	</span>
+	</div>
+	<!-- status user/!-->
+	<div class="text-sm">
+		<% if status_user(current_user) %>
+		<p class="text-gray-900 leading-none text-2xl">
+			,Professeur de <%= course.matiere.matiere %> au <%= course.user.school_name %> de <%= course.user.city %>
+		</p>
+		<% end %>
+	</div>
+	<!-- user bio/!-->
+	<p class="text-gray-600 leading-tight"> <%= course.user.resume %> </p>
+	<!-- content course/!-->
+	<div class="whitespace-normal leading-tight">
+	<p class="readMore">
+		<%= sanitize course.content %>
+	</p>			   
+	</div>
+</div>
+<% end %>
+</div>

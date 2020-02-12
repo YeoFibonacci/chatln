@@ -1,14 +1,15 @@
-
-<%= simple_form_for(@matiere) do |f| %>
-  <%= f.error_notification %>
-  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
-
-  <div class="form-inputs">
-    <%= f.input :matiere %>
-    <%= f.input :slug %>
-  </div>
-
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
-<% end %>
+<section class="section">
+	<div class="container">
+		<%= simple_form_for(@matiere) do |f| %>
+		 <%= f.error_notification %>
+		 <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>		  
+		 <div class="field">
+		  <div class="control">
+			<%= f.input :matiere, input_html: { class: 'input' }, wrapper: false, label_html: { class: 'string' }, label:"Matière:", placeholder:"Ajouter une matière..", autofocus: true %>
+		  </div>
+		  
+		 </div>
+		  <%= f.button :submit, "Créer une matière", class: 'button is-info' %>
+		<% end %>
+	</div>
+</section>

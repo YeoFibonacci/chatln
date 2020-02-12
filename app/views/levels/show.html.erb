@@ -1,14 +1,19 @@
 <p id="notice"><%= notice %></p>
+<% title=@level.title %>
 
-<p>
-  <strong>Title:</strong>
-  <%= @level.title %>
-</p>
+<div class="content">
+   <h1 class="title"> Les cours du niveau <%= @level.title %></h1>
+</div>
+  <br>
+<hr />
+<div class="columns container"> 
+  <div class="column is-8 is-offset-1">
+  
+   	<!-- <%=  %>
+   		render 'shared/main/content_feed' %>
+   		</!-->
 
-<p>
-  <strong>Slug:</strong>
-  <%= @level.slug %>
-</p>
+   <%= render 'shared/main/content_feed'  %>
 
-<%= link_to 'Edit', edit_level_path(@level) %> |
-<%= link_to 'Back', levels_path %>
+  </div>
+</div>

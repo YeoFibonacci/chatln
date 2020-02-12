@@ -1,0 +1,56 @@
+<div class="user-profile mt-16">
+  <div class="profile row">
+    <div class="col-md-4 avatar">
+      <div class="wrapper">
+        <% if @user.avatar.attached? %>
+          <%= image_tag @user.avatar %>
+        <%else %>
+        <!-- avatar user/!-->
+        <img src="https://bulma.io/images/placeholders/32x32.png" class=" w-10  rounded-full mr-2">
+        <%end %>
+      </div>
+    </div>
+    <div class="col-md-8 basic-info">
+      <ul class="posts">
+        <li><span><%= @courses.count %></span> cours</li>
+        <li><span>695</span> Vues aujourd'hui</li>
+        <li><span>5045</span> Vues Semaine</li>
+      </ul>
+      <h2 class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:no-underline"><%= @user.username %></h2>
+        <% if @user == current_user %>
+          <a class="edit-profile" href="<%= edit_user_registration_path(@user) %>">
+            <button>Modifier Profile</button>
+          </a>
+        <% end %>
+      <p class="mt-2 text-gray-600"> <%= @user.resume %></p>
+      
+    </div>
+  </div>
+
+  <div class="user-tabs">
+    <a class="tab active" href="">
+      <i class="fa fa-th"></i>
+      cours
+    </a>
+    <a class="tab" href="">
+      <i class="fa fa-tv"></i>
+      <span>695</span> Vues Aujourd'hui
+    </a>
+    <a class="tab" href="">
+      <i class="fa fa-tv"></i>
+      <span>5045</span> Vues semaine
+    </a>
+    <a class="tab" href="">
+      <i class="fa fa-tv"></i>
+      <span>32057</span> Vues Mois
+    </a>
+  </div>
+
+  <div class="user-images">   
+      <div class="col-8 sm:w-full ml-20 mr-20">
+        <!-- course boucle/!-->
+          <%= render "shared/feed/content_feed" %>
+        
+      </div>
+  </div>
+</div>

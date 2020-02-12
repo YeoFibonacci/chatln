@@ -1,0 +1,170 @@
+<!doctype html>
+
+
+<html>
+<head>
+
+
+<title>Une classe en jQuery pour "LIRE LA SUITE" de vos articles</title>
+
+
+<script type="text/javascript" src="jquery-1.4.2.js"></script>
+
+
+<style>
+
+
+/*Style general de la page*/
+
+
+body {font:14px verdana, sans-serif;background:#000000;color:#C0C0C0;font-weight:bold;}
+
+
+/*Style des articles et de chaque titre*/
+
+
+.rubrique {border:1px solid #fff;width:50%;}
+
+
+h2 {color:#FFFF00;}
+
+
+/*Style du lien « Lire la suite »*/
+
+
+.suite {color:#FF4500;}
+
+
+</style>
+
+
+<script type="text/javascript">
+
+
+    //noConflict() permet d’éviter les conflits entre d’éventuels plugins
+
+
+    jQuery.noConflict();
+
+
+    //Préchargement des actions liées au clic sur le lien “Lire la Suite”
+
+
+    jQuery(document).ready(function(){
+
+
+            jQuery(".suite").click(function(){
+
+
+//La partie de l’article incluse entre les balises span apparait si elle est masquée et inversement.
+
+
+                jQuery("#" + this.name + " span").slideToggle();
+
+
+//Changement du libellé du lien.
+
+
+                if (jQuery(this).text() == "Lire la suite..."){ 
+
+
+                    jQuery(this).text("Replier");}else
+
+
+                 {jQuery(this).text("Lire la suite...");}    
+
+
+            });
+
+
+    });
+
+
+//Tout le contenu des balises span des articles appartenant à la classe //« rubrique » est masqué au chargement de la page.
+
+
+    jQuery(function(){
+
+
+            jQuery(".rubrique span").toggle();    
+
+
+    });
+
+
+    
+
+
+</script>
+
+
+</head>
+
+
+<!--Présentation de la page-->
+
+
+UNE CLASSE EN JQUERY POUR "LIRE LA SUITE"
+
+
+Implémentez cette classe pour afficher l'intégralité de vos articles
+
+
+Affichez le code source ou cliquez ici pour recevoir le tutoriel par mail.
+
+    
+
+
+<!--Exemple d’un article appartenant à la classe « rubrique » On insère la partie invisible du texte entre des balises span -->
+
+
+== Voici le titre de mon article ==
+
+Ce texte est visible puisqu'il s'agit du début de mon article
+
+
+mais j'ai inséré dans celui-ci de quoi le raccourcir et vous
+
+
+permettre de...le faire apparaitre entièrement si le
+
+
+sujet vous intéresse. Cette fonctionnalité ne vous coutera que
+
+
+quelques lignes de Jquery et permettra à vos lecteurs de lire
+
+
+toutes vos rubriques sans cliquer dans tous les sens.
+
+
+<!--Exemple de lien « Lire la suite… » On veille bien à ce que l’attribut name du lien soit égal à l’id de l’article (Div) correspondant --> 
+
+
+Lire la suite...
+
+
+== Un deuxième article ==
+
+Ici aussi nous n'affichons au départ que les premiers mots
+
+
+d'un article afin de gagner de la place sur la page et pour
+
+
+plus de confort en terme de lecture...
+
+
+et c'est tellement facile à mettre en oeuvre ! Alors faites-vous
+
+
+plaisir et sachez qu'un bout de code est toujours perfectible. L'important
+
+
+est d'être bien inspiré.
+
+
+Lire la suite...
+
+
+</html>

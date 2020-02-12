@@ -1,0 +1,11 @@
+<div class="sm:ml-4 md:ml-20 lg:ml-20 xl:ml-20">
+  	<span class="fil-icon">
+  		<i class="fa fa-newspaper-o"></i>
+  	</span> Fil Matières
+  	<!-- boucle for matiere items/!-->  	
+      <ul class="text-lg leading-relaxed sm:leading-normal pt-1">
+	    <% @matieres.each do |m| %>
+	      <li class="font-black"> <%= link_to m.matiere, m %></li>	
+	    <% end %>	
+      </ul>
+</div>

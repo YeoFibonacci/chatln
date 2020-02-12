@@ -1,14 +1,37 @@
+
+<br><br>
 <p id="notice"><%= notice %></p>
+<% title=@matiere.matiere %>
 
-<p>
-  <strong>Matiere:</strong>
-  <%= @matiere.matiere %>
-</p>
 
-<p>
-  <strong>Slug:</strong>
-  <%= @matiere.slug %>
-</p>
+  <div class="content">
+    <h1 class="title ml-20"><%= @matiere.matiere %></h1>
+    <hr>
 
-<%= link_to 'Edit', edit_matiere_path(@matiere) %> |
-<%= link_to 'Back', matieres_path %>
+  </div><br>
+  <div class="content">   
+  </div>
+
+<hr />
+<div class="columns container"> 
+  <div class="column is-8 is-offset-1">
+    <%= render 'shared/feed/content_feed' %>    
+  </div>
+</div>
+
+<!-- Personalisé la page dedié a chaque Espace/ voir: https://www.quora.com/q/tryloqfljqahdrua!-->
+<!-- Math/!-->
+    
+    <!-- histoire/!-->
+    
+    <!-- Géographie/!-->
+    
+
+    <!--SVT/!-->
+    <!--Chimie/!-->
+    <!--Physique/!-->
+    <!--Anglais/!-->
+    <!--Français/!-->
+    <!--Espagol/!-->
+    <!--Allemand/!-->
+    <!--EDHC/!-->

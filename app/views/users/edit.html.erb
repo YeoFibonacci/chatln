@@ -1,0 +1,82 @@
+<div class="user-edit-page mt-20">
+  <div class="actions">
+    <div class="nav flex-column nav-pills" role="tablist" aria-orientation="vertical">
+      <a class="nav-link active" data-toggle="pill" href="#v-pills-home" role="tab" aria-selected="true">Modifier Profile</a>
+      <a class="nav-link" data-toggle="pill">changer le mot de passe</a>
+      <a class="nav-link" data-toggle="pill">Autorisations Applications</a>
+      <a class="nav-link" data-toggle="pill">Email</a>
+      <a class="nav-link" data-toggle="pill">Contacts</a>
+      <!--
+        <a class="nav-link" data-toggle="pill">Privacy and Security</a>
+        /!-->
+      <%= link_to 'Se Déconnecter', destroy_user_session_path, method: :delete, class: "nav-link" %>
+    </div>
+  </div>
+  <div class="details tab-content">
+    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+      
+      <%= form_with model: current_user, local: true, html: {class: "form-horizontal form-edit-user"} do |f| %>
+        <div class="form-group row">
+          <div class="col-sm-3 col-form-label">
+            <!-- avatar user/!-->
+             <img src="https://bulma.io/images/placeholders/32x32.png" class=" w-10  rounded-full mr-2">
+            <!--
+             current_user.avatar.attached? 
+               image_tag current_user.avatar, 
+             
+          -->
+          </div>
+          <div class="col-sm-9">
+            <p class="username"><%=current_user.username %></p>
+            <a class="change-photo" href="">Changez Photo Profil</a>
+          </div>
+        </div>
+        <div class="form-group row">
+          <%= f.label :Profil, class: 'col-sm-3 col-form-label' %>
+          <div class="col-sm-9">
+            <%= f.file_field :avatar, class: 'form-control' %>
+          </div>
+        </div>
+        
+        <div class="form-group row">
+          <%= f.label :Nom, class: 'col-sm-3 col-form-label' %>
+          <div class="col-sm-9">
+            <%= f.text_field :username, class: 'form-control' %>
+          </div>
+        </div>
+        
+        <div class="form-group row">
+          <%= f.label :Desciption, class: 'col-sm-3 col-form-label' %>
+          <div class="col-sm-9">
+            <%= f.text_area :resume, placeholder:"Écrivez une description de vous", class: 'form-control' %>
+          </div>
+        </div>
+        <div class="form-group row">
+          <%= f.label :email, class: 'col-sm-3 col-form-label' %>
+          <div class="col-sm-9">
+            <%= f.text_field :email, class: 'form-control' %>
+          </div>
+        </div>
+        <div class="form-group row">
+          <%= f.label :contact, class: 'col-sm-3 col-form-label' %>
+          <div class="col-sm-9">
+            <%= f.text_field :contact, class: 'form-control' %>
+          </div>
+        </div>
+        <div class="form-group row">
+          <%= f.label :sexe, class: 'col-sm-3 col-form-label' %>
+          <div class="col-sm-9">
+            <%= f.text_field :gender, class: 'form-control' %>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-3">
+          </div>
+          <div class="col-sm-9">
+            <%= f.submit "Enregistrer", class: 'btn btn-primary' %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

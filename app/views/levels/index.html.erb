@@ -1,29 +1,35 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Levels</h1>
+<h1 class="title is-2">Niveaux</h1>
 
-<table>
+<div class="level">
+  <div class="level-left"></div>
+  <div class="level-right">
+    <%= link_to 'Créer une matière', new_level_path, class:'button is-dark' %>
+  </div>
+</div>
+
+<table class="table is-fullwidth">
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Slug</th>
+      <th>Niveau</th>
       <th colspan="3"></th>
     </tr>
   </thead>
-
   <tbody>
     <% @levels.each do |level| %>
-      <tr>
-        <td><%= level.title %></td>
-        <td><%= level.slug %></td>
-        <td><%= link_to 'Show', level %></td>
-        <td><%= link_to 'Edit', edit_level_path(level) %></td>
-        <td><%= link_to 'Destroy', level, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+    <tr>
+      <td><%= link_to level.title, level %></td>
+      <td>
+        <div class="buttons is-right">
+          <%= link_to 'Voir', level, class:'button is-dark' %>
+          <%= link_to 'Modifier', edit_level_path(level), class:'button is-info' %>
+          <%= link_to 'Supprimer', level, class:'button is-danger', method: :delete, data: { confirm: "La suppression sera definitive? " } %>
+        </div>
+      </td>
+    </tr>
     <% end %>
   </tbody>
+
 </table>
 
-<br>
-
-<%= link_to 'New Level', new_level_path %>

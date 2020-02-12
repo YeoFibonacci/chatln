@@ -1,0 +1,25 @@
+/********************************
+			responsive  
+***********************************/
+
+@media screen and (max-width: 700px) {
+  .inner{
+         width: 100%;
+         margin: auto;
+       }
+  .logo{
+      justify-content: center;
+      margin-left: 50%;
+    }
+   
+   .m-left{
+    float: none;
+    
+  }
+
+.m-right{
+  float: right;
+
+}
+
+}

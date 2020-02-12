@@ -1,29 +1,32 @@
-<p id="notice"><%= notice %></p>
+<h1 class="title is-2">Matières</h1>
 
-<h1>Matieres</h1>
+<div class="level">
+  <div class="level-left"></div>
+  <div class="level-right">
+    <%= link_to 'Créer une matière', new_matiere_path, class:'button is-dark' %>
+  </div>
+</div>
 
-<table>
+<table class="table is-fullwidth">
   <thead>
     <tr>
-      <th>Matiere</th>
-      <th>Slug</th>
+      <th>Matière</th>
       <th colspan="3"></th>
     </tr>
   </thead>
-
   <tbody>
     <% @matieres.each do |matiere| %>
-      <tr>
-        <td><%= matiere.matiere %></td>
-        <td><%= matiere.slug %></td>
-        <td><%= link_to 'Show', matiere %></td>
-        <td><%= link_to 'Edit', edit_matiere_path(matiere) %></td>
-        <td><%= link_to 'Destroy', matiere, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+    <tr>
+      <td><%= link_to matiere.matiere, matiere %></td>
+      <td>
+        <div class="buttons is-right">
+          <%= link_to 'Voir', matiere, class:'button is-dark' %>
+          <%= link_to 'Modifier', edit_matiere_path(matiere), class:'button is-info' %>
+          <%= link_to 'Supprimer', matiere, class:'button is-danger', method: :delete, data: { confirm: "La suppression sera definitive? " } %>
+        </div>
+      </td>
+    </tr>
     <% end %>
   </tbody>
+
 </table>
-
-<br>
-
-<%= link_to 'New Matiere', new_matiere_path %>

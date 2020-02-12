@@ -1,4 +1,5 @@
 class LevelsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_level, only: [:show, :edit, :update, :destroy]
 
   # GET /levels
@@ -10,6 +11,7 @@ class LevelsController < ApplicationController
   # GET /levels/1
   # GET /levels/1.json
   def show
+   @courses = Course.where('matiere_id = ?', @level.id)
   end
 
   # GET /levels/new
@@ -28,7 +30,7 @@ class LevelsController < ApplicationController
 
     respond_to do |format|
       if @level.save
-        format.html { redirect_to @level, notice: 'Level was successfully created.' }
+        format.html { redirect_to levels_path, notice: 'Promotion créée.' }
         format.json { render :show, status: :created, location: @level }
       else
         format.html { render :new }
@@ -42,7 +44,7 @@ class LevelsController < ApplicationController
   def update
     respond_to do |format|
       if @level.update(level_params)
-        format.html { redirect_to @level, notice: 'Level was successfully updated.' }
+        format.html { redirect_to @level, notice: 'Promotion modeifier.' }
         format.json { render :show, status: :ok, location: @level }
       else
         format.html { render :edit }
@@ -56,7 +58,7 @@ class LevelsController < ApplicationController
   def destroy
     @level.destroy
     respond_to do |format|
-      format.html { redirect_to levels_url, notice: 'Level was successfully destroyed.' }
+      format.html { redirect_to levels_url, notice: 'la promotion supprimer.' }
       format.json { head :no_content }
     end
   end
@@ -64,10 +66,10 @@ class LevelsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_level
-      @level = Level.find(params[:id])
+      @level = Level.friendly.find(params[:id])
     end
 
-    # Only allow a list of trusted parameters through.
+    # Never trust parameters from the scary internet, only allow the white list through.
     def level_params
       params.require(:level).permit(:title, :slug)
     end

@@ -1,19 +1,5 @@
-<p id="notice"><%= notice %></p>
+<!-- course_show contient le cours + commentaire avec sont systeme complet + /!-->
+ <%= render 'shared/course/course_show' %>
 
-<p>
-  <strong>Title:</strong>
-  <%= @course.title %>
-</p>
 
-<p>
-  <strong>Content:</strong>
-  <%= @course.content %>
-</p>
 
-<p>
-  <strong>Slug:</strong>
-  <%= @course.slug %>
-</p>
-
-<%= link_to 'Edit', edit_course_path(@course) %> |
-<%= link_to 'Back', courses_path %>

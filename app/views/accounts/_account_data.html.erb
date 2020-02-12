@@ -1,0 +1,76 @@
+<div class="column is-4 data-account">
+  <!-- logo section add on admin page/!-->
+  <div class="card-logo logo">
+    <figure>
+      <%= link_to root_path do %>
+        ChatLn
+      <% end %>
+    </figure>
+  </div>
+  <!-- Create Personal Accounted: TEACHER AND SCHOOL ACCOUNT OFFICAIL/!-->
+  <div class="account account-official school">
+    <div class="avatar">
+      <figure class="avatar profile">
+        <%= link_to do %>
+        <!-- place current avatar here and name user/!-->
+          <%= current_user.username %>
+        <% end %>
+      </figure>
+    </div>
+  </div>
+  <!-- Add classroon /!-->
+  <div class="add-class">
+    <!-- checkbox option for  class listed
+        the prof can add multiple class
+        school multiple class
+        /!-->
+  </div>
+
+  <br>
+  <br>
+  <br>
+<!--redirect to live chat tool/!-->
+  <div class="columns assistant">
+    <figure class="column is-2 assistant">
+      <img src="https://bulma.io/images/placeholders/32x32.png", class="is-rounded">
+    </figure>
+    <%= link_to root_path, class:" column" do %>
+      Parler a un Assistant
+    <% end %>
+  </div>
+  <br>
+  <br>
+  <!-- user profile/!-->
+  <div class="columns profile">
+    <figure class="column is-2 assistant">
+      <img src="https://bulma.io/images/placeholders/32x32.png", class="is-rounded">
+    </figure>
+    <%= link_to edit_user_registration_path, class:"column" do %>
+      Profile
+    <% end %>
+  </div>
+  <br>
+  <br>
+  <!-- documentations lien vers le blog ou site statique/!-->
+  <div class="columns documentation">
+    <figure class="column is-2 assistant">
+      <img src="https://bulma.io/images/placeholders/32x32.png", class="is-rounded">
+    </figure>
+    <%= link_to root_path, class:"column" do %>
+      Documentation
+    <% end %>
+  </div>
+  <br>
+  <br>
+
+  <!-- sign out/!-->
+  <div class="columns sign-out">
+    <figure class="column is-2 assistant">
+      <img src="https://bulma.io/images/placeholders/32x32.png", class="is-rounded">
+    </figure>
+    <%= link_to destroy_user_session_path, method: :delete, class:"column" do %>
+      Déconnexion
+    <% end %>
+  </div>
+
+</div>

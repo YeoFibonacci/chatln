@@ -1,0 +1,45 @@
+
+/******** CONVENTION DE NOMMAGE**********
+
+@REGROUPER LES IMPORTS DE GEM DANS LEUR SECTION
+@ RESPECTEZ L'ARCHITECTURE D'ORGANISATION OU PROPOSEZ UNE PLUS AMELIOREZ(TOUJOURS S'AMELIORER FAIT AVANCER LE MONDE)
+@RESPECTEZ LES NOMS DE FICHIER
+@LA VERSION RESPONSIVE EST TERMIER PAR _R Ex: navbar => navbar_r;
+/******** *******************************/
+
+/*** Gems import ***/
+@import "bulma";
+@import "summernote";
+@import "summernote-bs4";
+
+
+
+/*** SECTION IMPORTS COMPONENTS******/
+/***** BASE CONTENTS ******/
+@import "base/normalize.scss";
+
+/***** COMPONENTS ********/
+
+/***** LAYOUT  **********/
+@import "components/layout/import_navbar.scss";
+
+/****** PAGES *********/
+@import "components/pages/feed/readMore.scss";
+
+/***** SIDEBAR *******/
+@import "components/pages/sidebar/import_sidebar.scss";
+
+
+/***** ACCOUNT *******/
+@import "components/pages/account/acccount.scss";
+
+/***** SIGN IN *******/
+@import "components/pages/sign/sign_in.scss";
+
+/***** SIGN UP *******/
+@import "components/pages/sign/sign_up.scss";
+
+@import "components/pages/home/home_page.scss";
+
+/***** users pas bon ****/
+@import "components/profile/users.scss";

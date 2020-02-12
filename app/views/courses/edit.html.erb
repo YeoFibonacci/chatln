@@ -1,6 +1,18 @@
-<h1>Editing Course</h1>
+<section class="section">
+	<div class="container">
+		<div class="columns is-centered">
+			<div class="column is-mobile">
 
-<%= render 'form', course: @course %>
+				<h2>Modifiez le cours</h2>
+				<br>
+				<%= render 'form', course:@course %>
 
-<%= link_to 'Show', @course %> |
-<%= link_to 'Back', courses_path %>
+				<br>
+
+				<%= link_to 'Voir le cours', @course %> |
+
+                <%= link_to 'Retour', courses_path %>
+			</div>
+		</div>
+	</div>
+</section>

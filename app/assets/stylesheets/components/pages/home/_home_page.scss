@@ -1,0 +1,61 @@
+.homepage{ 
+            color: #fff;
+            font-family: sans-serif;
+            padding-top: 45px;
+            }
+  .header{
+             background: linear-gradient(to right, #8A2387, #E94057, #F27121);
+            height: 150vh;
+            overflow: hidden;
+            z-index: 12;
+          }
+    .header{
+              padding-left: 10vw;
+
+          }
+    .content{
+             float: left;
+             width: 45vw;
+             margin-top: 12.5rem;
+           }
+    h1{
+       font-size: 1.25rem;
+
+     }
+    .link_btn{
+      border-radius: 3.125rem;
+      background: #fff;
+      letter-spacing: 0.125rem;
+      width: 10.625rem;
+      padding: 0.9375rem 1.875rem;
+      color: #000;
+      font-size: 1rem;
+      font-weight: bold;
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      transition: all .3s ease; 
+    }
+  .link_btn:hover {
+           color:#fff;
+           background: #8A2387;
+           text-decoration: none;
+         }
+    p{
+      margin: 1.25rem;
+      letter-spacing: 0.0625rem;
+    }
+  img{
+      margin: 5rem;
+      width: 25rem; /* image width*/
+            }
+ /* .self{
+        margin-top: 28rem;
+      }
+  h3{
+     color: #444;
+     text-align: center;
+     font-weight: lighter;
+     letter-spacing: 1.25rem;
+     text-transform:uppercase;
+   }*/

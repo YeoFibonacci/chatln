@@ -1,0 +1,28 @@
+<!-- comment box print/!-->
+<div class="box">
+  <article class="media">
+    <!-- avatar user comment/!-->
+    <div class="media-left">
+      <figure class="image is-48x48 is-rounded">
+        <%= link_to  edit_user_registration_path, class: "button" do %>
+          <img src="https://bulma.io/images/placeholders/32x32.png">
+        <% end %>
+      </figure>
+    </div>
+    <!-- comment + meta info user /!-->
+    <div class="media-content">
+      <div class="content">
+        <p>
+          <!-- ADD
+            Upvote comment by over user
+            /!-->
+            <strong><%= comment.user.username %></strong>
+        </p>
+        <br>
+        <p>  
+          <%= comment.content %>
+        </p>
+      </div>
+    </div>
+  </article>
+</div>
