@@ -36,9 +36,9 @@ gem 'tailwindcss', '~> 1.0', '>= 1.0.3'
 gem 'bulma-rails', '~> 0.8.0'
 
 
+
 ################## MEMBERSHIP  ##################
 gem 'devise', '~> 4.7', '>= 4.7.1'
-gem 'simple_form', '~> 5.0', '>= 5.0.2'
 
 ################## SYSTEMS  ##################
 gem 'bundler', '~> 2.1', '>= 2.1.4'
@@ -47,8 +47,34 @@ gem 'rack', '~> 2.1', '>= 2.1.1'
 gem 'rspec', '~> 3.9'
 
 
+################## JS ##################
+gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+#gem 'jquery-fileupload-rails', '~> 1.0'
+#gem 'jquery-validation-rails', '~> 1.19'
 
 
+
+
+################## FORMS ##################
+gem 'simple_form', '~> 5.0', '>= 5.0.2'
+gem 'friendly_id', '~> 5.2', '>= 5.2.5'
+gem 'summernote-rails', '~> 0.8.12.0'
+#gem 'kaminari', '~> 1.1', '>= 1.1.1'#pas implementé
+
+
+
+
+
+######### PROVIDER CONNECT #########
+#gem 'omniauth-google-oauth2', '~> 0.8.0'
+#gem 'omniauth-facebook', '~> 5.0'
+#gem 'google-analytics-rails', '~> 1.1', '>= 1.1.1'
+#gem 'ipinfo-rails', '~> 0.1.1' #https://ipinfo.io/
+
+
+# Use ActiveStorage variant
+gem 'mini_magick', '~> 4.10', '>= 4.10.1'
 
 
 
@@ -64,6 +90,11 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+
+
+  gem 'best_errors', '~> 0.1.4'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  gem 'guard', '~> 2.16', '>= 2.16.1'
 end
 
 group :development do
