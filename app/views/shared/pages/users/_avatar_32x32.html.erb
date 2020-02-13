@@ -2,25 +2,23 @@
 <div class="flex container flex-col bg-white rounded-t-lg rounded-b-lg overflow-hidden border-t border-b border-l border-r border-gray-400 mb-2 ">
   <!--transform content in link/!-->
   <%= link_to user_path(current_user) do %>        
-    <div class="flex items-center">
+    <div class="flex items-center -mt-16">
       <!-- avatar 32X32/!-->
       <img src="https://bulma.io/images/placeholders/32x32.png" class=" flex w-10 rounded-full mr-2">
-      <!-- current_user.username/!-->
-      <div class="text-sm">
-        <span class="text-gray-900 leading-none text-2xl font-bold uppercase">
+      <!-- current_user.username/!-->     
+      <span class="text-sm text-gray-900 leading-none text-2xl font-bold uppercase">
           <%= current_user.username %>           
-        </span>
-         <span class="text-black leading-none text-gray-600 font-semibold">
-           
-         (<%= current_user.school_name %>)             
-         </span>
-      </div>
+      </span>
+      <span class="text-black leading-none text-gray-600 font-semibold">           
+         (<%= current_user.city %>)             
+      </span>      
     </div>
   <% end %>
-  <!-- info avatar/!-->
-  <div class=" container feed__new_course">      
-    <p classe=" text-gray-400 text-3xl font-semibold">
-      <%= link_to "Quelle est votre question, sujet ou lien ?", new_course_path %>
-    </p>
-  </div>
+  <!-- info avatar/!-->       
+      <%= link_to  new_course_path do%>
+      <p class="text-gray-400 text-xl font-semibold">
+        Quelle est votre question, sujet ou lien ?
+      </p>
+      <% end %>
+     
 </div>

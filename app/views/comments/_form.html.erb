@@ -3,7 +3,7 @@
 <%= simple_form_for([@course, @course.comments.build], remote: true) do |f| %>
 
 <label class="block">
-<%= f.input :content, required: false, input_html: { class: 'textarea text-gray-700 form-textarea mt-1 block w-full' }, wrapper: false, label_html: { class: 'label' }, label:'participez au cours:', placeholder:'Ecrivez votre texte ici...' %>
+<%= f.input :content, required: false, input_html: { class: 'textarea text-gray-700 form-textarea  ' }, wrapper: false, label_html: { class: 'label' }, label:'participez au cours:', placeholder:'Ecrivez votre texte ici...' %>
   
 </label>
 
