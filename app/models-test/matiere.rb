@@ -1,2 +1,0 @@
-class Matiere < ApplicationRecord
-end

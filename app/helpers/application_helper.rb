@@ -19,12 +19,12 @@ module ApplicationHelper
 #admin
   #devrait etre bien gerer avec les role
   def admin_role(current_user)
-    user_signed_in? && current_user.email == 'inoussa@gmail.com'
+    user_signed_in? && current_user.email == 'admin@gmail.com'
   end
 
   #status
   def status_user(current_user)
-   user_signed_in? && current_user.status == "prof" || current_user.email == 'inoussa@gmail.com'
+   user_signed_in? && current_user.status == "prof" || current_user.email == 'admin@gmail.com'
     
   end
 
