@@ -1,28 +1,23 @@
 <!-- comment box print/!-->
-<div class="box">
-  <article class="media">
-    <!-- avatar user comment/!-->
-    <div class="media-left">
-      <figure class="image is-48x48 is-rounded">
-        <%= link_to  edit_user_registration_path, class: "button" do %>
-          <img src="https://bulma.io/images/placeholders/32x32.png">
-        <% end %>
-      </figure>
+
+<div class="block">
+  <div class="w-full block bg-white ">
+    <!-- avatar/!-->
+    <div class="flex-row">
+      <div class="flex items-center ">
+      <!-- avatar 64x64/!-->
+        <img src="https://bulma.io/images/placeholders/64x64.png" class=" flex w-16 rounded-full mr-4">
+      <!-- current_user.username/!-->
+      <div class="text-bold text-center py-2 m-2">
+       <!--meta info sur user /!-->       
+        <%= comment.user.username %>
     </div>
-    <!-- comment + meta info user /!-->
-    <div class="media-content">
-      <div class="content">
-        <p>
-          <!-- ADD
-            Upvote comment by over user
-            /!-->
-            <strong><%= comment.user.username %></strong>
-        </p>
-        <br>
-        <p>  
-          <%= comment.content %>
-        </p>
-      </div>
     </div>
-  </article>
+    </div>
+    <span class="border_l">
+      <%= comment.content %>
+    </span>
+    <!-- content/!-->
+  </div>
 </div>
+
