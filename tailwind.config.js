@@ -1,9 +1,13 @@
 module.exports = {
+
   theme: {
-    extend: {}
+   fontFamily: {
+-      'sans': 'Helvetica, Arial, sans-serif',
+ }
   },
   variants: {},
   plugins: [
   	require('@tailwindcss/custom-forms'),
   ]
 }
+
