@@ -6,7 +6,7 @@ $(document).ready(function() {
             var subStr = str.substring(0, max);
             var hiddenStr = str.substring(max, $.trim(str).length);
             $(this).empty().html(subStr);
-            $(this).append(' <a href="javascript:void(0);" class="lire-plus">Lire la suite...</a> <br> ');
+            $(this).append(' <a href="javascript:void(0);" class="lire-plus button is-info is-outlined mb-2 ml-2 rounded ">Lire la suite...</a> <br> ');
             $(this).append('<span class="addText">' + hiddenStr + '</span>');
         }
     });
