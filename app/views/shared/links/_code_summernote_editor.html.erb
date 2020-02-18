@@ -1,0 +1,21 @@
+<!-- config summernote editor/!-->
+<script>
+    $(document).ready(function() {
+        $('[data-provider="summernote"]').summernote({
+        placeholder: 'Ecrivez votre texte ici...',
+        lang:"fr-FR",
+        height: 250,                 // set editor height
+  		minHeight: null,             // set minimum height of editor
+  		maxHeight: null,             // set maximum height of editor
+  		focus: true, 
+        toolbar: [
+          ['font', ['bold', 'underline', 'clear']],
+          ['color', ['color']],
+          ['para', ['ul', 'ol', 'paragraph']],
+          ['table', ['table']],
+          ['insert', ['link', 'picture', 'video']],
+          ['view', ['fullscreen', 'codeview', 'help']]
+        ]
+      });
+    });
+ </script>

@@ -19,24 +19,4 @@
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.15/dist/summernote.min.js"></script>
 
- <script>
-    $(document).ready(function() {
-        $('[data-provider="summernote"]').summernote({
-        placeholder: 'Ecrivez le contenu ici...',
-        lang:"fr-FR",
-        height: 250,                 // set editor height
-  		minHeight: null,             // set minimum height of editor
-  		maxHeight: null,             // set maximum height of editor
-  		focus: true, 
-        toolbar: [
-          ['style', ['style']],
-          ['font', ['bold', 'underline', 'clear']],
-          ['color', ['color']],
-          ['para', ['ul', 'ol', 'paragraph']],
-          ['table', ['table']],
-          ['insert', ['link', 'picture', 'video']],
-          ['view', ['fullscreen', 'codeview', 'help']]
-        ]
-      });
-    });
- </script>
+ <%= render "shared/links/code_summernote_editor" %>
