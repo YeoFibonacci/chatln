@@ -12,9 +12,9 @@
      <%= f.error_notification %>
      <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %> 
 
-      <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">     
+      <div class="bg-white rounded px-8 pt-6 pb-8 mb-4">     
         <div class="mb-4">            
-          <%= f.input :email, required: false, input_html: { class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"}, wrapper: false, label_html: { class: "string" }, placeholder:" votre adresse email", label:"adresse email :", autofocus: true %> 
+          <%= f.input :email, required: false, input_html: { class: " appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"}, wrapper: false, label_html: { class: "string" }, placeholder:" votre adresse email", label:"adresse email :", autofocus: true %> 
           <p class="text-red-500 text-xs italic">Adresse email.</p>           
         </div>
 

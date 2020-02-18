@@ -34,7 +34,7 @@ gem 'jbuilder', '~> 2.5'
 ################   STYLISATIONS    #################""
 gem 'tailwindcss', '~> 1.0', '>= 1.0.3'
 gem 'bulma-rails', '~> 0.8.0'
-
+gem 'bootstrap', '~> 4.4', '>= 4.4.1'
 
 
 ################## MEMBERSHIP  ##################
@@ -59,6 +59,7 @@ gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 gem 'simple_form', '~> 5.0', '>= 5.0.2'
 gem 'friendly_id', '~> 5.3'
 gem 'summernote-rails', '~> 0.8.12.0'
+
 #gem 'kaminari', '~> 1.1', '>= 1.1.1'#pas implementé
 
 

@@ -1,5 +1,5 @@
 <% content_for @title ="Créer mon compte" %>
-<section class="section">
+
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-6">
@@ -7,7 +7,8 @@
 
         <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
           <%= f.error_notification %>
-     <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %> 
+     <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+     <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">  
           <div class="form-group row">
             <div class="col-sm-10">
               <%= f.input :username, required: false, input_html: { class: "input"}, wrapper: false, label_html: { class: "sting" }, placeholder:"Votre nom complet :", label:'Nom Complet :', autofocus: true %>
@@ -16,13 +17,13 @@
           </div>
           <div class="form-group row">
             <div class="col-sm-10">
-              <%= f.input :contact, required: false,  input_html: { class: "input"}, wrapper: false, label_html: { class: "tel" }, label:'N° Tel:', placeholder:"N° Téléphone" %>
+              <%= f.input :contact, required: false,  input_html: { class: "input"}, wrapper: false, label_html: { class: "tel" }, label:'N° Tel:', placeholder:"N° Téléphone:" %>
             </div>
           </div>
 
           <div class="form-group row">
             <div class="col-sm-10">
-              <%= f.input :email, required: false, input_html: { class: "input form-control"}, wrapper: false, label_html: { class: "email" }, label: 'Adresse Email :', placeholder:"email" %>
+              <%= f.input :email, required: false, input_html: { class: "input form-control"}, wrapper: false, label_html: { class: "email" }, label: 'Adresse Email :', placeholder:"email:" %>
             </div>            
           </div>
 
@@ -56,5 +57,6 @@
       </div>
     </div>
   </div>
-</section>
+  </div>
+
 
