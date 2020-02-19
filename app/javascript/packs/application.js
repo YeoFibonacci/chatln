@@ -17,3 +17,5 @@
 
 console.log('Hello World from Webpacker')
 import "../css/application.css"
+import "core-js/stable";
+import "regenerator-runtime/runtime";
