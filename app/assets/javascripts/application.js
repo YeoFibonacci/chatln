@@ -10,9 +10,9 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
 //= require jquery3
 //= require rails-ujs
+//= require jquery
 //= require activestorage
 //= require jquery_ujs
 //= require summernote/summernote-bs4.min
