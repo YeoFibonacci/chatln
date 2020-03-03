@@ -23,6 +23,7 @@ module ApplicationHelper
   end
 
   #status
+  #revoir la  condition
   def status_user(current_user)
    user_signed_in? && current_user.status == "prof" || current_user.email == 'admin@gmail.com'
     

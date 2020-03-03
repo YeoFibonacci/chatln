@@ -9,21 +9,27 @@
       <!-- current_user.username/!-->
 
         <div class="text-bold text-center">
-         <!--meta info sur user /!-->       
+         <!--meta info sur user /!--> 
+         <% if comment.user.status == '1' %>
+         <span>Professeur</span>
+         <% else %>
+          <span>Eleve</span>
+         <% end %>  
           <%= comment.user.username %>
         </div>
       </div>
     </div>
     <!-- content/!-->
-    <div class="p-6 mb-2 border border-t rounded-t-lg rounded-r-lg rounded-l-lg rounded-b-lg -mt-16 ">
-      <% if course_author(@course) %>      
-        <span class="bg-green-200">
+    <!-- refactoriser le code via les custom style/!-->
+    <div class="p-2">
+      <% if comment.user.status == '1' %>      
+        <div class="mb-2 border bg-blue-200 border-t rounded-t-lg rounded-r-lg rounded-l-lg rounded-b-lg -mt-16">
           <%= comment.content %>
-        </span>
+        </div>
       <% else %>
-        <span class="">        
+        <div class="mb-2 border border-t rounded-t-lg rounded-r-lg rounded-l-lg rounded-b-lg -mt-16">        
           <%= comment.content %>
-        </span>
+        </div>
       <% end %>
     </div>
   </div>

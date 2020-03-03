@@ -357,7 +357,7 @@ DEPENDENCIES
   jquery-ui-rails (~> 6.0, >= 6.0.1)
   listen (>= 3.0.5, < 3.2)
   mini_magick (~> 4.10, >= 4.10.1)
-  nokogiri (~> 1.10, >= 1.10.7)
+  nokogiri (~> 1.10, >= 1.10.8)
   pg (>= 0.18, < 2.0)
   puma (~> 3.11)
   rack (~> 2.2, >= 2.2.2)

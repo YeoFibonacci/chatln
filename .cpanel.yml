@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    #ChatlnApp contient le projet complet
+    - export DEPLOYPATH=/home/chatln/ChatlnApp/
+    - /bin/cp -R images $DEPLOYPATH
