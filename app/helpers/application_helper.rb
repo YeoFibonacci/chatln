@@ -25,7 +25,7 @@ module ApplicationHelper
   #status
   #revoir la  condition
   def status_user(current_user)
-   user_signed_in? && current_user.status == "prof" || current_user.email == 'admin@gmail.com'
+   user_signed_in? && current_user.status == "1" || current_user.email == 'admin@gmail.com'
     
   end
 
