@@ -34,11 +34,8 @@ class CommentsController < ApplicationController
     @comment.user_id = current_user.id
     respond_to do |format|
       if @comment.save
-        format.html { redirect_to @course, notice: 'votre note est ajoutée.' }
-        format.js # renders create.js.erb
-
-
-        
+        format.html { redirect_to @course, notice: 'Note envoyée.' }
+        format.js # renders create.js.erb        
       else
         format.html { render :new }
         format.json { render json: @comment.errors, status: :unprocessable_entity }

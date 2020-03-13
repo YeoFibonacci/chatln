@@ -143,3 +143,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 ################### JS  ############################
 #AMELIORER LE PERFORMANCES AVEC TURBOLINK
 #https://blog.appsignal.com/2018/05/23/speeding-up-your-apps-navigation-with-turbolinks.html
+
+#https://coderwall.com/p/ttrhow/deploying-rails-app-using-nginx-puma-and-capistrano-3

@@ -7,5 +7,5 @@ class Comment < ApplicationRecord
 
   #VALIDAES PARAMETRES COMMENT
   validates :course_id, :content, presence:true
-  validates :content, length: { minimum: 10}
+  #validates :content, length: { minimum: 1}# analyse la taille des commentaires
 end
