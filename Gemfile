@@ -74,12 +74,7 @@ gem 'summernote-rails', '~> 0.8.12.0'
 gem 'mini_magick', '~> 4.10', '>= 4.10.1'
 
 
-############### DEPLOYMENT PREPARE START  ######################
-#https://www.synbioz.com/blog/tech/deployer-et-heberger-une-application-rails-avec-capistrano-et-unicorn
-gem 'capistrano', '~> 3.12'
-gem 'capistrano-ext', '~> 1.2', '>= 1.2.1'
 
-############### DEPLOYMENT PREPARE END #########################
 
 
 
