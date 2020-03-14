@@ -119,7 +119,9 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-
+########################### DEPLOYMENT  ##########
+#Déployer l'application Rails à l'aide de Nginx, Puma et Capistrano 3
+#https://coderwall.com/p/ttrhow/deploying-rails-app-using-nginx-puma-and-capistrano-3
 
 
 
