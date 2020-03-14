@@ -137,7 +137,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #https://www.digitalocean.com/community/tags/ruby-on-rails
 
 #RAILS SECTION
-#https://www.digitalocean.com/community/tags/ruby-on-rails
 
 ####################### BEST PRATICE DB  ####################################
 #Index partiels

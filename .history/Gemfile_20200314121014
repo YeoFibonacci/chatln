@@ -133,11 +133,10 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #Mise à l'échelle des applications Ruby à 1 000 demandes par minute - Guide du débutant
 #https://www.speedshop.co/2015/07/29/scaling-ruby-apps-to-1000-rpm.html
 
-############################ SECTION RAILS OF DIGITALOCEAN ############################
+############################ SECTION RAILS OF DIGITALOCEAN
 #https://www.digitalocean.com/community/tags/ruby-on-rails
 
-#RAILS SECTION
-#https://www.digitalocean.com/community/tags/ruby-on-rails
+#
 
 ####################### BEST PRATICE DB  ####################################
 #Index partiels
