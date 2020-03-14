@@ -160,7 +160,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #https://www.digitalocean.com/community/tutorials/how-to-build-a-realtime-chat-app-with-react-and-graphql
 
 
-################################# VS CODE KNOW  #######################
+##########################  VS CODE KNOW   #################"""
+################################# VS CODE  #######################
 # AVOIR UN ENVIRONNEMENT UNIFIER VIA REMOTE-SSH   
 #https://www.digitalocean.com/community/tutorials/how-to-use-visual-studio-code-for-remote-development-via-the-remote-ssh-plugin
 #How To use Live Share with Visual Studio Code

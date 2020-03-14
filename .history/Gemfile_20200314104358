@@ -146,6 +146,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #https://coderwall.com/p/ttrhow/deploying-rails-app-using-nginx-puma-and-capistrano-3
 
+################################# CONFIG  ENVIRONNEMENTS  #######################
+# AVOIR UN ENVIRONNEMENT UNIFIER VIA REMOTE-SSH   
+#https://www.digitalocean.com/community/tutorials/how-to-use-visual-studio-code-for-remote-development-via-the-remote-ssh-plugin
 
 #Comment déployer et gérer votre DNS à l'aide d'OctoDNS sur Ubuntu 18.04
 #https://www.digitalocean.com/community/tutorials/how-to-deploy-and-manage-your-dns-using-octodns-on-ubuntu-18-04
@@ -155,13 +158,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 
-############## AUTRES RESSOURCES   ###################"""
-#Comment créer une application de chat en temps réel avec React et GraphQL
-#https://www.digitalocean.com/community/tutorials/how-to-build-a-realtime-chat-app-with-react-and-graphql
-
-
-################################# VS CODE KNOW  #######################
-# AVOIR UN ENVIRONNEMENT UNIFIER VIA REMOTE-SSH   
-#https://www.digitalocean.com/community/tutorials/how-to-use-visual-studio-code-for-remote-development-via-the-remote-ssh-plugin
-#How To use Live Share with Visual Studio Code
-#https://www.digitalocean.com/community/tutorials/how-to-use-live-share-with-visual-studio-code
+############## AUTRES RESSOURCES   
