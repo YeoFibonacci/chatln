@@ -31,9 +31,10 @@
 
                 <!-- option form/!-->
                 <%= render 'shared/course/options' %>
-                    <div id="comment_add" class="mb-4">
-                        <!-- section commentaire/!-->
 
+                    <div id="comment_add" class="mb-4">
+
+                        <!-- section commentaire/!-->
                         <%= render @course.comments , locals:{comments: @comment} %>
                     </div>
                     <!-- form comments/!-->
@@ -41,4 +42,4 @@
                         <%= render 'comments/form' %>
                     </div>
             </div>
-        </div>
+            </d

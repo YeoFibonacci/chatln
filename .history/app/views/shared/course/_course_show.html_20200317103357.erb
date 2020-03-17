@@ -13,7 +13,7 @@
             <!-- avatar prof/!-->
             <div class="flex-row">
                 <div class="flex items-center ">
-
+                    /*
                     <!-- avatar 64x64/!-->
                     <img src="https://bulma.io/images/placeholders/64x64.png" class=" flex w-16 rounded-full mr-4">
                     <!-- current_user.username/!-->
@@ -31,9 +31,10 @@
 
                 <!-- option form/!-->
                 <%= render 'shared/course/options' %>
-                    <div id="comment_add" class="mb-4">
-                        <!-- section commentaire/!-->
 
+                    <div id="comment_add" class="mb-4">
+
+                        <!-- section commentaire/!-->
                         <%= render @course.comments , locals:{comments: @comment} %>
                     </div>
                     <!-- form comments/!-->
