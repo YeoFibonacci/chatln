@@ -30,10 +30,11 @@
                 <div class="mb-2 border border-t rounded-t-lg rounded-r-lg rounded-l-lg rounded-b-lg -mt-16">
                     <%= comment.content %>
                         <div class="delete">
-                            <% if current_user.comments.exists?(@comment.id) %>
-                                <%= link_to 'Supprimer', comment_path(@comment), method: :delete, data: { confirm: 'Are you sure'} %>
-                                    <% end %>
+                            <% if current_user.comments.exists?(@.id) %>
+                                <%= link_to 'Remove', _path(@), method: :delete, data: { confirm: 'Are you sure
+                        <% end %>
                         </div>
+
                 </div>
                 <% end %>
 

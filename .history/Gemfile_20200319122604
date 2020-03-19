@@ -208,10 +208,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #ENGAG: 
     # Photo de profile
     #SMS et Email
-      # voir le modele de Quora, les guidé vers le email
-    #Vote Positif/vote Negatif(un box ajax pour le feedback)
-    #Suivi/Suiveur
-    #Chatln Groupe
-    #résumé des cours pour ajouter dans sa doc
-    #Chatln Document
+    #Vote positif/vote Negatif
 #################  END FEATURES ORGAG ##########################

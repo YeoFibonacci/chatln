@@ -212,6 +212,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
     #Vote Positif/vote Negatif(un box ajax pour le feedback)
     #Suivi/Suiveur
     #Chatln Groupe
-    #résumé des cours pour ajouter dans sa doc
+    #résumé des cours p
     #Chatln Document
 #################  END FEATURES ORGAG ##########################

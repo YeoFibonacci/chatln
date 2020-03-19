@@ -31,8 +31,8 @@
                     <%= comment.content %>
                         <div class="delete">
                             <% if current_user.comments.exists?(@comment.id) %>
-                                <%= link_to 'Supprimer', comment_path(@comment), method: :delete, data: { confirm: 'Are you sure'} %>
-                                    <% end %>
+                                <%= link_to 'Remove', comment_path(@comment), method: :delete, data: { confirm: 'Are you sure
+                            <% end %>
                         </div>
                 </div>
                 <% end %>

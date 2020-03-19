@@ -29,13 +29,19 @@
             <% else %>
                 <div class="mb-2 border border-t rounded-t-lg rounded-r-lg rounded-l-lg rounded-b-lg -mt-16">
                     <%= comment.content %>
-                        <div class="delete">
-                            <% if current_user.comments.exists?(@comment.id) %>
-                                <%= link_to 'Supprimer', comment_path(@comment), method: :delete, data: { confirm: 'Are you sure'} %>
-                                    <% end %>
-                        </div>
+                        .colp
                 </div>
                 <% end %>
 
     </div>
+</div>
+
+
+
+
+
+<div class="delete">
+    <% if current_user.posts.exists?(@post.id) %>
+        <%= link_to 'Remove', post_path(@post), method: :delete, data: { confirm: 'Are you sure
+    <% end %>
 </div>
