@@ -125,7 +125,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 
-#################################         BEST PRATICES  RAILS  ##############################################
+#################################         BEST PRATICES  RAILS           ##############################################
 #Accélérez votre application Ruby on Rails
 #https://medium.com/@daniellempesis/speeding-up-your-ruby-on-rails-app-4c37ec71b126
 
@@ -141,84 +141,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #RAILS SECTION
 #https://www.digitalocean.com/community/tags/ruby-on-rails
 
-
-
-
-###################  PRODUCT  ################
-
-########################## START TESTING APPS ##############################
-
-#GUIDELINE FOR RAILS TEST
-#https://betterment.engineering/guidelines-for-testing-rails-applications-betterment-9bc3d5a8bb77
-########################## END  TESTING APPS ##############################
-
-
-#################  START FEATURES ORGAG ########################
-#ENGAG: 
-    # Photo de profile
-    #SMS et Email
-      # voir le modele de Quora, les guidé vers le email
-    #Vote Positif/vote Negatif(un box ajax pour le feedback)
-    #Suivi/Suiveur
-    #Chatln Groupe
-    #résumé des cours pour ajouter dans sa doc
-    #Chatln Document
-#################  END FEATURES ORGAG ##########################
-
-
-############## AUTRES RESSOURCES   ###################"""
-#Comment créer une application de chat en temps réel avec React et GraphQL
-#https://www.digitalocean.com/community/tutorials/how-to-build-a-realtime-chat-app-with-react-and-graphql
-
-#Follower/Folliwing
-#https://medium.com/better-programming/how-to-create-a-follow-feature-in-rails-by-aliasing-associations-30d63edee284
-
-
-################################ Features Links  #########################
-#live chat app
-# RESSOURCES:
-# https://blog.heroku.com/real_time_rails_implementing_websockets_in_rails_5_with_action_cable
-#https://www.sitepoint.com/rails-and-actioncable-adding-advanced-features/
-
-
-# repositorie github: https://github.com/SophieDeBenedetto/action-cable-example
-# # exemple site: https://action-cable-example.herokuapp.com/chatrooms/new
-
-
-
-################### JS  ############################
-#AMELIORER LE PERFORMANCES AVEC TURBOLINK
-#https://blog.appsignal.com/2018/05/23/speeding-up-your-apps-navigation-with-turbolinks.html
-
-#https://coderwall.com/p/ttrhow/deploying-rails-app-using-nginx-puma-and-capistrano-3
-
-
-#Comment déployer et gérer votre DNS à l'aide d'OctoDNS sur Ubuntu 18.04
-#https://www.digitalocean.com/community/tutorials/how-to-deploy-and-manage-your-dns-using-octodns-on-ubuntu-18-04
-
-#Conteneurisation d'une application Ruby on Rails pour le développement avec Docker Compose
-#https://www.digitalocean.com/community/tutorials/containerizing-a-ruby-on-rails-application-for-development-with-docker-compose
-
-
-
-###################  END PRODUCT  ############
-
-#################### UX/UI   #############################
-
-#Ajoutez un formulaire d'inscription à chaque page de votre application avec un modal Bootstrap
-#https://medium.com/swlh/rails-5-signup-devise-bootstrap-modal-337a5ed2139d
-
-############### INTERNATIONALISATION ###################""
-#Le guide complet de l'internationalisation des rails (i18n
-
-#########################" utilisation des messages Flash###############
-#https://medium.com/@nerdplusdog/back-in-a-flash-using-flash-messages-in-your-ruby-on-rails-apps-c39e09c15551
-
-
-#################### END UX/UI   #############################
-
-
-####################### DB AND PERFORNACE  ####################################
+####################### BEST PRATICE DB  ####################################
 #Index partiels
 #https://www.postgresql.org/docs/11/indexes-partial.html
 # ACTIVE RECORD
@@ -245,9 +168,37 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 
+################### JS  ############################
+#AMELIORER LE PERFORMANCES AVEC TURBOLINK
+#https://blog.appsignal.com/2018/05/23/speeding-up-your-apps-navigation-with-turbolinks.html
+
+#https://coderwall.com/p/ttrhow/deploying-rails-app-using-nginx-puma-and-capistrano-3
 
 
+#Comment déployer et gérer votre DNS à l'aide d'OctoDNS sur Ubuntu 18.04
+#https://www.digitalocean.com/community/tutorials/how-to-deploy-and-manage-your-dns-using-octodns-on-ubuntu-18-04
 
+#Conteneurisation d'une application Ruby on Rails pour le développement avec Docker Compose
+#https://www.digitalocean.com/community/tutorials/containerizing-a-ruby-on-rails-application-for-development-with-docker-compose
+
+########################## START TESTING APPS ##############################
+
+#GUIDELINE FOR RAILS TEST
+#https://betterment.engineering/guidelines-for-testing-rails-applications-betterment-9bc3d5a8bb77
+########################## END  TESTING APPS ##############################
+
+
+############## AUTRES RESSOURCES   ###################"""
+#Comment créer une application de chat en temps réel avec React et GraphQL
+#https://www.digitalocean.com/community/tutorials/how-to-build-a-realtime-chat-app-with-react-and-graphql
+
+#Follower/Folliwing
+#https://medium.com/better-programming/how-to-create-a-follow-feature-in-rails-by-aliasing-associations-30d63edee284
+
+############### INTERNATIONALISATION ###################""
+#Le guide complet de l'internationalisation des rails (i18n
+#########################" utilisation des messages Flash###############
+#https://medium.com/@nerdplusdog/back-in-a-flash-using-flash-messages-in-your-ruby-on-rails-apps-c39e09c15551
 
 
 
@@ -259,3 +210,28 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #https://www.digitalocean.com/community/tutorials/how-to-use-visual-studio-code-for-remote-development-via-the-remote-ssh-plugin
 #How To use Live Share with Visual Studio Code
 #https://www.digitalocean.com/community/tutorials/how-to-use-live-share-with-visual-studio-code
+
+
+
+################################ Features Links  #########################
+#live chat app
+# RESSOURCES:
+# https://blog.heroku.com/real_time_rails_implementing_websockets_in_rails_5_with_action_cable
+#https://www.sitepoint.com/rails-and-actioncable-adding-advanced-features/
+
+
+# repositorie github: https://github.com/SophieDeBenedetto/action-cable-example
+# # exemple site: https://action-cable-example.herokuapp.com/chatrooms/new
+
+
+#################  START FEATURES ORGAG ########################
+#ENGAG: 
+    # Photo de profile
+    #SMS et Email
+      # voir le modele de Quora, les guidé vers le email
+    #Vote Positif/vote Negatif(un box ajax pour le feedback)
+    #Suivi/Suiveur
+    #Chatln Groupe
+    #résumé des cours pour ajouter dans sa doc
+    #Chatln Document
+#################  END FEATURES ORGAG ##########################

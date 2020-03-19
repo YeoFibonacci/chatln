@@ -125,7 +125,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 
-#################################         BEST PRATICES  RAILS  ##############################################
+#################################         BEST PRATICES  RAILS           ##############################################
 #Accélérez votre application Ruby on Rails
 #https://medium.com/@daniellempesis/speeding-up-your-ruby-on-rails-app-4c37ec71b126
 
@@ -218,7 +218,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #################### END UX/UI   #############################
 
 
-####################### DB AND PERFORNACE  ####################################
+####################### BEST PRATICE DB  ####################################
 #Index partiels
 #https://www.postgresql.org/docs/11/indexes-partial.html
 # ACTIVE RECORD

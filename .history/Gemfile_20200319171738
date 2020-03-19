@@ -125,7 +125,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 
-#################################         BEST PRATICES  RAILS  ##############################################
+#################################         BEST PRATICES  RAILS           ##############################################
 #Accélérez votre application Ruby on Rails
 #https://medium.com/@daniellempesis/speeding-up-your-ruby-on-rails-app-4c37ec71b126
 
@@ -140,6 +140,31 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #RAILS SECTION
 #https://www.digitalocean.com/community/tags/ruby-on-rails
+
+####################### BEST PRATICE DB  ####################################
+#Index partiels
+#https://www.postgresql.org/docs/11/indexes-partial.html
+# ACTIVE RECORD
+#Interface de requête d'enregistrement actif
+#https://guides.rubyonrails.org/active_record_querying.html#pluck
+#rails cache
+#https://guides.rubyonrails.org/caching_with_rails.html#cache-stores
+
+# analysez les performances de votre DB
+#https://blog.heroku.com/rails-database-optimization
+
+#Optimisationd u cache
+#https://blog.heroku.com/cache-invalidation-rails-5-2-dalli-store
+
+#COMPRENDRE LES THREAD
+#https://ruby-doc.org/core-2.6.1/Thread.html
+
+
+#Optimisationde DB
+#https://medium.com/reflektive-engineering/simplifying-complex-queries-with-the-activerecord-union-gem-4d1be1b185b5
+
+#Jointures
+#https://medium.com/better-programming/building-self-joins-and-triple-joins-in-ruby-on-rails-455701bf3fa7
 
 
 
@@ -216,33 +241,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 #################### END UX/UI   #############################
-
-
-####################### DB AND PERFORNACE  ####################################
-#Index partiels
-#https://www.postgresql.org/docs/11/indexes-partial.html
-# ACTIVE RECORD
-#Interface de requête d'enregistrement actif
-#https://guides.rubyonrails.org/active_record_querying.html#pluck
-#rails cache
-#https://guides.rubyonrails.org/caching_with_rails.html#cache-stores
-
-# analysez les performances de votre DB
-#https://blog.heroku.com/rails-database-optimization
-
-#Optimisationd u cache
-#https://blog.heroku.com/cache-invalidation-rails-5-2-dalli-store
-
-#COMPRENDRE LES THREAD
-#https://ruby-doc.org/core-2.6.1/Thread.html
-
-
-#Optimisationde DB
-#https://medium.com/reflektive-engineering/simplifying-complex-queries-with-the-activerecord-union-gem-4d1be1b185b5
-
-#Jointures
-#https://medium.com/better-programming/building-self-joins-and-triple-joins-in-ruby-on-rails-455701bf3fa7
-
 
 
 
