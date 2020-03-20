@@ -32,7 +32,6 @@ class CommentsController < ApplicationController
     @course = Course.find(params[:course_id])
     @comment = @course.comments.build(comment_params)
     @comment.user_id = current_user.id
-    
     respond_to do |format|
       if @comment.save
         format.html { redirect_to @course }
