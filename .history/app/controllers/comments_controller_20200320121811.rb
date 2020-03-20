@@ -33,7 +33,7 @@ class CommentsController < ApplicationController
     @comment = @course.comments.build(comment_params)
     @comment.user_id = current_user.id
     respond_to do |format|
-      if @comment.save
+      if @comment.savecd c
         format.html { redirect_to @course }
         format.js {} # renders create.js.erb        
       else
