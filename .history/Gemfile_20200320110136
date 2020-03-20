@@ -123,12 +123,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #Déployer l'application Rails à l'aide de Nginx, Puma et Capistrano 3
 #https://coderwall.com/p/ttrhow/deploying-rails-app-using-nginx-puma-and-capistrano-3
 
-#Comment déployer et gérer votre DNS à l'aide d'OctoDNS sur Ubuntu 18.04
-#https://www.digitalocean.com/community/tutorials/how-to-deploy-and-manage-your-dns-using-octodns-on-ubuntu-18-04
-
-#Conteneurisation d'une application Ruby on Rails pour le développement avec Docker Compose
-#https://www.digitalocean.com/community/tutorials/containerizing-a-ruby-on-rails-application-for-development-with-docker-compose
-
 
 
 #################################         BEST PRATICES  RAILS  ##############################################
@@ -207,14 +201,13 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #https://coderwall.com/p/ttrhow/deploying-rails-app-using-nginx-puma-and-capistrano-3
 
-################### Webpacker Master   #####################
-#Mastering Packs dans Webpacker
 
-#https://prathamesh.tech/2019/09/24/mastering-packs-in-webpacker/
+#Comment déployer et gérer votre DNS à l'aide d'OctoDNS sur Ubuntu 18.04
+#https://www.digitalocean.com/community/tutorials/how-to-deploy-and-manage-your-dns-using-octodns-on-ubuntu-18-04
 
-#https://prathamesh.tech/road-to-rails-6/
+#Conteneurisation d'une application Ruby on Rails pour le développement avec Docker Compose
+#https://www.digitalocean.com/community/tutorials/containerizing-a-ruby-on-rails-application-for-development-with-docker-compose
 
-################### End Webpacker Master   #####################
 
 
 ###################  END PRODUCT  ############

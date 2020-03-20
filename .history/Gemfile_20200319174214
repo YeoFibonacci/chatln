@@ -123,12 +123,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #Déployer l'application Rails à l'aide de Nginx, Puma et Capistrano 3
 #https://coderwall.com/p/ttrhow/deploying-rails-app-using-nginx-puma-and-capistrano-3
 
-#Comment déployer et gérer votre DNS à l'aide d'OctoDNS sur Ubuntu 18.04
-#https://www.digitalocean.com/community/tutorials/how-to-deploy-and-manage-your-dns-using-octodns-on-ubuntu-18-04
-
-#Conteneurisation d'une application Ruby on Rails pour le développement avec Docker Compose
-#https://www.digitalocean.com/community/tutorials/containerizing-a-ruby-on-rails-application-for-development-with-docker-compose
-
 
 
 #################################         BEST PRATICES  RAILS  ##############################################
@@ -177,17 +171,14 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 #Comment créer une application de chat en temps réel avec React et GraphQL
-  #https://www.digitalocean.com/community/tutorials/how-to-build-a-realtime-chat-app-with-react-and-graphql
-  #https://medium.com/@a.carreras.c/using-action-cable-for-private-messaging-presence-indicators-on-react-rails-app-526b3e34c14d
-  #https://medium.com/@dakota.lillie/using-action-cable-with-react-c37df065f296
-  #https://medium.com/tag/websocket
-  #https://medium.com/@dakota.lillie/using-action-cable-with-react-c37df065f296
-  #https://github.com/cpunion/react-actioncable-provider
-  #https://guides.rubyonrails.org/action_cable_overview.html#example-2-receiving-new-web-notifications
-  #
+#https://www.digitalocean.com/community/tutorials/how-to-build-a-realtime-chat-app-with-react-and-graphql
+#https://medium.com/@a.carreras.c/using-action-cable-for-private-messaging-presence-indicators-on-react-rails-app-526b3e34c14d
+
+
+
 #Follower/Folliwing
 #https://medium.com/better-programming/how-to-create-a-follow-feature-in-rails-by-aliasing-associations-30d63edee284
-#https://medium.com/@elizabethprendergast/using-custom-relation-queries-to-establish-friends-and-friendships-in-rails-and-activerecord-6c6e5825433a
+
 
 ################################ Features Links  #########################
 #live chat app
@@ -207,14 +198,13 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #https://coderwall.com/p/ttrhow/deploying-rails-app-using-nginx-puma-and-capistrano-3
 
-################### Webpacker Master   #####################
-#Mastering Packs dans Webpacker
 
-#https://prathamesh.tech/2019/09/24/mastering-packs-in-webpacker/
+#Comment déployer et gérer votre DNS à l'aide d'OctoDNS sur Ubuntu 18.04
+#https://www.digitalocean.com/community/tutorials/how-to-deploy-and-manage-your-dns-using-octodns-on-ubuntu-18-04
 
-#https://prathamesh.tech/road-to-rails-6/
+#Conteneurisation d'une application Ruby on Rails pour le développement avec Docker Compose
+#https://www.digitalocean.com/community/tutorials/containerizing-a-ruby-on-rails-application-for-development-with-docker-compose
 
-################### End Webpacker Master   #####################
 
 
 ###################  END PRODUCT  ############

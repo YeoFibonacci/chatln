@@ -212,8 +212,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #https://prathamesh.tech/2019/09/24/mastering-packs-in-webpacker/
 
-#https://prathamesh.tech/road-to-rails-6/
-
 ################### End Webpacker Master   #####################
 
 

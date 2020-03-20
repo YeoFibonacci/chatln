@@ -207,14 +207,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #https://coderwall.com/p/ttrhow/deploying-rails-app-using-nginx-puma-and-capistrano-3
 
-################### Webpacker Master   #####################
-#Mastering Packs dans Webpacker
 
-#https://prathamesh.tech/2019/09/24/mastering-packs-in-webpacker/
-
-#https://prathamesh.tech/road-to-rails-6/
-
-################### End Webpacker Master   #####################
 
 
 ###################  END PRODUCT  ############
