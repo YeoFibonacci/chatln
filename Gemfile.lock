@@ -341,7 +341,6 @@ PLATFORMS
   x86-mswin32
 
 DEPENDENCIES
-  actionview (>= 5.2.4.2)
   best_errors (~> 0.1.4)
   bootsnap (>= 1.1.0)
   bootstrap (~> 4.4, >= 4.4.1)
