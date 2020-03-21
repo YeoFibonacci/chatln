@@ -11,11 +11,11 @@
             <div class="text-bold text-center">
                 <!--meta info sur user /!-->
                 <% if comment.user.status == '1' %>
-                    <span>Professeur</span>
-                    <% else %>
-                        <span>Eleve</span>
-                        <% end %>
-                            <%= comment.user.username %>
+                 <span>Professeur</span>
+                <% else %>
+                 <span>Eleve</span>
+                <% end %>
+                <%= comment.user.username %>
             </div>
         </div>
     </div>
