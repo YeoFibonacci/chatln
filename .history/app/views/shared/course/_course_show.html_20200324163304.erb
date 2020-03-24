@@ -1,0 +1,42 @@
+<div class="bg-gray-200">
+    <div class="flex flex-col w-8/12 py-32 md:ml-16">
+        <div class="container">
+            <!--matiere - niveau/!-->
+            <div class="flex-col mb-2">
+                <%= render "shared/pages/micro/micro_data_course" %>
+            </div>
+            <!-- titre du cours/!-->
+            <div class="flex-col text-3xl text-left text-bold">
+                <%= @course.title %>
+            </div>
+            <!-- avatar prof/!-->
+            <div class="flex-row">
+                <div class="flex items-center ">
+                    <!-- avatar 64x64/!-->
+                    <img src="https://bulma.io/images/placeholders/64x64.png" class="flex w-16 mr-4 rounded-full ">
+                    <!-- current_user.username/!-->
+                    <div class="py-2 m-2 text-center text-bold">
+                        <!--meta info sur user /!-->
+                        Professeur
+                        <%= @course.user.username %>
+                    </div>
+                </div>
+                <div class="p-6 leading-normal whitespace-normal bg-white border border-t border-b border-l border-r rounded-t-lg rounded-b-lg rounded-l-lg rounded-r-lg ">
+                    <!--content course/!-->
+                    <%= sanitize(@course.content) %>
+                </div>
+                <!-- option form/!-->
+                <%= render 'shared/course/options' %>
+                    <div id="comments" class="mb-4">
+                        <!-- section commentaire/!-->
+
+                        <%= render @course.comments %>
+                            >>>>>>> dev
+                    </div>
+                    <!-- form comments/!-->
+                    <div class="comment-form">
+                        <%= render 'comments/form' %>
+                    </div>
+            </div>
+        </div>
+    </div>

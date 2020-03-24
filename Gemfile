@@ -81,8 +81,6 @@ gem 'mini_magick', '~> 4.10', '>= 4.10.1'
 
 
 
-
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
