@@ -31,6 +31,6 @@ module ApplicationHelper
 
   #acces features
   def prof_our_course(current_user)
-    user_signed_in? && current_user.id == course.user_id
+    user_signed_in? && current_user.id == course.user_id ||
   end
 end

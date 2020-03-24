@@ -30,7 +30,7 @@ module ApplicationHelper
   end
 
   #acces features
-  def prof_our_course(current_user)
-    user_signed_in? && current_user.id == course.user_id
+  def prof(current_user)
+    user_signed_in? && current_user.id == course.user_id ||
   end
 end

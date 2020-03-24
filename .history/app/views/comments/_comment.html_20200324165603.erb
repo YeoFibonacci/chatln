@@ -1,14 +1,14 @@
 <!-- comment box print/!-->
 
-<div class="block bg-white border border-t border-b border-l border-r rounded-t-lg rounded-b-lg rounded-l-lg rounded-r-lg ">
+<div class="block bg-white border border-t border-r border-b border-l rounded-t-lg rounded-r-lg rounded-l-lg rounded-b-lg  ">
     <!-- avatar/!-->
     <div class="flex-row">
         <div class="flex items-center -mt-16">
             <!-- avatar 64x64/!-->
-            <img src="https://bulma.io/images/placeholders/64x64.png" class="flex w-16 mr-4 rounded-full ">
+            <img src="https://bulma.io/images/placeholders/64x64.png" class=" flex w-16 rounded-full mr-4 ">
             <!-- current_user.username/!-->
 
-            <div class="text-center text-bold">
+            <div class="text-bold text-center">
                 <!--meta info sur user /!-->
                 <% if comment.user.status == '1' %>
                     <span>Professeur</span>
@@ -20,15 +20,14 @@
         </div>
     </div>
     <!-- content/!-->
-    <!-- refactoriser le code via les custom style/ !-->
+    <!-- refactoriser le code via les custom style/!-->
     <div class="p-2">
-
-        <% if status_user(current_user) == true %>
-            <div class="mb-2 -mt-16 bg-blue-100 border p-2 border-t  rounded-b-lg rounded-r-lg">
+        <% if prof_our_course %>
+            <div class="mb-2 border bg-blue-200 border-t rounded-t-lg rounded-r-lg rounded-l-lg rounded-b-lg -mt-16">
                 <%= comment.content %>
             </div>
             <% else %>
-                <div class="mb-2 -mt-16 border bg-gray-100 p-2 border-t  rounded-b-lg rounded-r-lg">
+                <div class="mb-2 bgè border border-t rounded-t-lg rounded-r-lg rounded-l-lg rounded-b-lg -mt-16">
                     <%= comment.content %>
                 </div>
                 <% end %>
