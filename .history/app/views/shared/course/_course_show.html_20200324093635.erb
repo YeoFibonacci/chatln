@@ -12,6 +12,7 @@
             <!-- avatar prof/!-->
             <div class="flex-row">
                 <div class="flex items-center ">
+
                     <!-- avatar 64x64/!-->
                     <img src="https://bulma.io/images/placeholders/64x64.png" class="flex w-16 mr-4 rounded-full ">
                     <!-- current_user.username/!-->
@@ -25,10 +26,12 @@
                     <!--content course/!-->
                     <%= sanitize(@course.content) %>
                 </div>
+
                 <!-- option form/!-->
                 <%= render 'shared/course/options' %>
                     <div id="comments" class="mb-4">
                         <!-- section commentaire/!-->
+
                         <%= render @course.comments %>
                     </div>
                     <!-- form comments/!-->
