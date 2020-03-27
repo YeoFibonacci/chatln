@@ -10,12 +10,12 @@
 
             <div class="text-center text-bold">
                 <!--meta info sur user /!-->
-                <% if status_user(current_user) %>
+                <% if current_user>
                     <span>Professeur</span>
                     <% else %>
-                        <span>Eleve</span>
-                        <% end %>
-                            <%= comment.user.username %>
+                    <span>Eleve</span>
+                    <% end %>
+                        <%= comment.user.username %>
             </div>
         </div>
     </div>

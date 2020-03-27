@@ -1,0 +1,31 @@
+<% content_for @title =" Accueil" %>
+
+    <div class="bg-cover bg-center absolute z-0 h-screen bg-no-repeat" style="background-image:url('http://preview.uxtheme.website/xpider-preview/xpider/img/hero-8.png')"></div>
+    <div class="z-0 opacity-90 w-full h-full absolute" style="background: linear-gradient(-45deg, #2f1ce0 0%, #53a0fd 50%, #51eca5 100%);"></div>
+    <div class="absolute w-full flex flex-col">
+        <div class="bg-bottom bg-no-repeat bg-cover" style="background-image:url('https://galaxy.up.video/media/backgrounds/bg-curve.svg')">
+            <header class="z-20 w-full xl:px-0 px-2">
+                <div class="container mx-auto flex flex-wrap mt-8 mb-8 ">
+                    <div class="flex sm:w-1/2 flex">
+                        <a href="/" class="text-2xl text-white ml-1 font-bold hover:no-underline">CHATLN</a>
+                    </div>
+                    <div class="w-1/2 sm:flex  sm:right-0 justify-end">
+                        <%= link_to "Connectez", user_session_path, class:"border border-white md:bg-blue-400 sm:text-white text-blue-200 font-bold uppercase rounded-full py-2 px-4 hover:bg-blue-600 hover:no-underline hover:text-white float-right" %>
+                    </div>
+                </div>
+            </header>
+            <section class="w-full">
+                <div class="container mx-auto flex flex-row sm:items-center xl:pb-16 xl:px-0 px-4">
+                    <div class=" w-2/3 text-white flex flex-col">
+                        <h1 class="sm:text-5xl text-xl font-weight-bolder sm:mb-4">9 PROFESSEURS DE MAISON POUR VOUS</h1>
+                        <h2 class="sm:text-2xl text-base mb-2">Les Léçons, Serie d'Exercices avec vos prof prèférés.</h2>
+                        <p class="text-xs sm:text-base">La plate-forme qui aide les élèves de la 6e à la Tle à réviser les lécons et faire des exercices ensemble.</p>
+                        <div class="sm:flex  sm:right-0 justify-start">
+                            <%= link_to "Créez Compte",new_user_registration_path, class:" border  text-white bg-blue-600 font-bold uppercase rounded-full py-2 px-4 hover:bg-blue-400 hover:no-underline"%>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        </div

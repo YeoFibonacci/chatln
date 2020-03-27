@@ -10,7 +10,7 @@
 
             <div class="text-center text-bold">
                 <!--meta info sur user /!-->
-                <% if status_user(current_user) %>
+                <% if comment.user.status == '1' %>
                     <span>Professeur</span>
                     <% else %>
                         <span>Eleve</span>
@@ -31,6 +31,9 @@
                     <%= comment.content %>
                 </div>
                 <% end %>
+                    <% end %>
+                        <% end %>
+                            <% end %>
     </div>
 
 </div>

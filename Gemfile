@@ -261,10 +261,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 
-
-
-
-
 #rails debug
 #https://blog.heroku.com/debugging-year-old-sprockets-bug
 
