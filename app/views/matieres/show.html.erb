@@ -1,7 +1,8 @@
 
 <br><br>
 <p id="notice"><%= notice %></p>
-<% title=@matiere.matiere %>
+<!-- ajouter le niveau en fonction du niveau du current_user/!-->
+<% content_for @title=@matiere.matiere %>
 
 
   <div class="content">
@@ -15,7 +16,7 @@
 <hr />
 <div class="columns container"> 
   <div class="column is-8 is-offset-1">
-    <%= render 'shared/feed/content_feed' %>    
+    <%= render 'shared/feed/feed_flux/content_feed' %>    
   </div>
 </div>
 

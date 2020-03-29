@@ -1,4 +1,4 @@
-<% content_for @title =" Accueil" %>
+<% content_for @title ="La réussite" %>
 <!-- compagny presentation/!-->
 
 <!-- HEADER SECTION/!-->
@@ -8,23 +8,25 @@
         <div class="home_message md:mr-12 md:ml-12 sm:h-4 md:h-16">
             <div class=""item-center>
                 <a href="/" class="text-2xl text-black  font-bold hover:no-underline">CHATLN</a>
-                <%= link_to "Connectez", user_session_path, class:"border border-white md:bg-blue-400 sm:text-white text-blue-200 font-bold uppercase rounded-full py-2 px-4 hover:bg-blue-600 hover:no-underline hover:text-white float-right" %>
+                <%= link_to "Se Connectez", user_session_path, class:"border border-white bg-blue-400 text-white font-bold uppercase rounded-full py-2 px-4 hover:bg-blue-600 hover:no-underline hover:text-white float-right" %>
             </div>
         </div>
     </div>
     <!-- COMPAGNY MESSAGE/!-->
-    <div class="HomeMessage mt-18">
-        <div class="MainMessage md:mt-32 sm:mt-16 ml-16 md:w-1/2">
-            <p class="Message font-bold text-black md:text-5xl sm:text-2xl">
+    <div class="HomeMessage sm:mt-6 md:w-1/2 sm:w-full">
+        <div class="MainMessage md:mt-8 sm:mt-8 md:ml-16 sm:m-8 ">
+            <p class="Message font-bold text-black md:text-5xl sm:text-xl">
                <span>Conçu pour les Elèves.</span><br>
                <span>Conçu pour </span><br /> l'Education.
-               Conçu pour la Resuite</span>
+               Conçu pour la Réussite a l'école.</span>
             </p>
             <div class="Message">                
-                <p class="Massage-content font-serif text-2xl">
-                    CHATLN est la plateforme unique pour réviser vos léçons, préparer vos Interrogations, ainsi que que vos Dévoirs avec vos Professeurs. Pour mettre toutes les chances dans votre main.
+                <p class="Massage-content  text-2xl sm:text-xl">
+                    CHATLN est la plateforme unique pour réviser vos léçons, préparer vos Interrogations, ainsi que vos Dévoirs avec vos Professeurs. Pour mettre toutes les chances dans votre main.
                 </p>
-
+                <div class="sm:flex  sm:right-0 justify-start">
+                    <%= link_to "Créez Un Compte",new_user_registration_path, class:" border  text-white bg-blue-600 font-bold uppercase rounded-full py-2 px-4 hover:bg-blue-400 hover:no-underline"%>
+                </div>
             </div>
         </div>
         <div class="w-1/2">

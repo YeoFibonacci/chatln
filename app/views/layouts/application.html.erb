@@ -2,22 +2,17 @@
 <html lang="fr">
 
 <head>
-    <title>
-        <%= title %>
-    </title>
+<title><%= title %></title>
     <%= csrf_meta_tags %>
-        <%= csp_meta_tag %>
+    <%= csp_meta_tag %>
             <!-- Required meta tags -->
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-            <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-                <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
-
-
-                    <!-- links include top/!-->
-                    <%= render 'shared/links/links-top' %>
+        <!-- links include top/!-->
+        <%= render 'shared/links/links-top' %>
 
 </head>
 
@@ -27,19 +22,16 @@
     <%= render  'shared/devise/notification' %>
 
         <!-- NAVBAR SYSTEM/!-->
-        <%= render 'shared/nav/navbar' %>
+    <%= render 'shared/nav/navbar' %>
             <!--  other contains prints zone/!-->
-            <span class="mt-20">
+    <span class="mt-20">
     <%= yield %>
       
     </span>
-
-
-            <!-- include js links/!-->
-            <%= render 'shared/links/links-js' %>
-
-                <!-- analytics tools/!-->
-                <%= render 'shared/links/analytics_tools' %>
+     <!-- include js links/!-->
+    <%= render 'shared/links/links-js' %>
+    <!-- analytics tools/!-->
+    <%= render 'shared/links/analytics_tools' %>
 </body>
 
 </html>
